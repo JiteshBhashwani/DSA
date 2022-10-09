@@ -66,7 +66,7 @@ int LinkedList::pop_back()
     int popped{-1};
     if (this->empty())
     {
-        std::cout << "Stack Undeflow" << std::endl;
+        std::cout << "Stack Underflow" << std::endl;
     }
     else
     {
@@ -85,7 +85,7 @@ int LinkedList::pop_front()
     int popped{-1};
     if(this->empty())
     {
-        std::cout << "stack undeflow" << std::endl;
+        std::cout << "stack underflow" << std::endl;
     }
     else
     {
