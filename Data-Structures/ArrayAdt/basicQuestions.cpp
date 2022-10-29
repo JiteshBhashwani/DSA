@@ -59,6 +59,8 @@ void swapAlt(int arr[],int size)
 		
 }
 
+
+
 int main()
 {
     int arr[]{6,5,4,3,2,1};
