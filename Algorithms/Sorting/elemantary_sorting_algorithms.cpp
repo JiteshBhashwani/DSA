@@ -3,7 +3,6 @@ using namespace std;
 
 #define endl "\n";
 inline void fast_io();
-inline void io_to_file();
 
 void selectionSort(vector<int> &arr, int n)
 {
@@ -51,41 +50,17 @@ void insertionSortII(vector<int> &arr)
 	}
 }
 
-void solution()
-{
-	int size;
-	cin >> size;
-	vector<int> vec(size);
-	for (auto &&i : vec)
-		cin >> i;
-	
-	// selectionSort(vec,size);
-	
-	// bubbleSort(vec);
-	
-	// insertionSortI(vec);
-
-	// insertionSortII(vec);
-	
-	for (auto &&i : vec)
-		cout << i << " ";
-	cout << endl;
-}
 
 int main()
 {
-	io_to_file();
 	fast_io();
-	solution();
+	
+	
+	
+	
 	return 0;
 }
-inline void io_to_file()
-{
-#ifndef ONLINE_COMPILER
-	freopen("input.txt", "r", stdin);
-	freopen("output.txt", "w", stdout);
-#endif
-}
+
 inline void fast_io()
 {
 	ios_base::sync_with_stdio(false);
