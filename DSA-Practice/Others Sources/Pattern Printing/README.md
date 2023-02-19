@@ -266,6 +266,7 @@ Print these patterns using loops:
        B A
        A
        
+       [code](https://github.com/JiteshBhashwani/DSA/blob/65492aeeb2e31ec0c0c78c18481278eca69785fa/DSA-Practice/Others%20Sources/Pattern%20Printing/PrintPattern.java#L420)
 35.    1      1
        12    21
        123  321
