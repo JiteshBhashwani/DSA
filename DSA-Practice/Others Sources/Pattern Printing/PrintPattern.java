@@ -1,67 +1,8 @@
 package myPackage.fundamentals;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class PrintPattern {
-    public static void butterfly(int x){
-        for (int i = 0; i < x; i++) {
-            for (int j = 0; j < x; j++) {
-                System.out.print(i>=j? "*": " ");
-            }
-            for (int j = x-1; j >= 0; j--){
-                System.out.print(i>=j? "*": " ");
-            }
-            System.out.println();
-        }
-        for (int i = 0; i < x; i++) {
-            for (int j = x-1; j >= 0; j--){
-                System.out.print(i<=j? "*": " ");
-            }
-            for (int j = 0; j < x; j++) {
-                System.out.print(i<=j? "*": " ");
-            }
-            System.out.println();
-        }
-    }
-    public static void butterfly1(int x){
-        for (int i = 0; i < x; i++) {
-            for (int j = 0; j <= i; j++) {
-                System.out.print(" * ");
-            }
-            for (int j = 0; j < (x-1-i)*2; j++) {
-                System.out.print("   ");
-            }
-            for (int j = 0; j <= i; j++) {
-                System.out.print(" * ");
-            }
-            System.out.println();
-        }
-        for (int i = x-1; i >= 0; i--) {
-            for (int j = 0; j <= i; j++) {
-                System.out.print(" * ");
-            }
-            for (int j = 0; j < (x-1-i)*2; j++) {
-                System.out.print("   ");
-            }
-            for (int j = 0; j <= i; j++) {
-                System.out.print(" * ");
-            }
-            System.out.println();
-        }
-    }
-    public static void rhombus(int x){
-        for (int i = 0; i < x; i++) {
-            for (int j = 0; j < x-i-1; j++) {
-                System.out.print(" ");
-            }
-            for (int j = 0; j < x; j++) {
-                System.out.print("x");
-            }
-            System.out.println();
-        }
-    }
-
     public static void pattern1(int n){
         for (int row = 1; row <= n; row++) {
             for (int col = 1; col <= n; col++) {
@@ -276,29 +217,216 @@ public class PrintPattern {
             }
             int maxCol = (row <= n)? (row * 2): (((x+1)-row) * 2);
             for (int col = 1; col <= maxCol - 1; col++) {
-//                System.out.print(col + "|" + (maxCol - col) + " || ");
-                int printThis = Math.min(col,maxCol-col);
-                System.out.print(printThis);
-//                System.out.print(maxCol);
+                int mid = maxCol / 2;
+                System.out.print((col <= mid)?(mid - col + 1):(col - mid + 1));
             }
             System.out.println();
         }
     }
-
-
-    //////////////////////////////////////////////////////////
-
-        public static void pattern31(int n){
-            n = n * 2;
-            for (int i = 1; i < n; i++){
-                for (int j = 1; j < n;j++){
-                    int x = (n/2) - Math.min(Math.min(i,j),Math.min(n-i,n-j)) + 1;
-                    System.out.print(x + " ");
-                }
-                System.out.println();
+    public static void pattern18(int n){
+        int dimension = n + n;
+        for (int row = 0; row < dimension; row++) {
+            for (int col = 0; col < dimension; col++) {
+                int rangeStart = (row < n)? n - row : row - n + 1;
+                int rangeEnd = (row < n)?(n + row): (dimension-row) + (n - 1);
+                System.out.print(rangeStart <= col && col < rangeEnd?" ":"*");
             }
+            System.out.println();
         }
+    }
+    public static void pattern19(int n){
+        int dimension = n + n;
+        for (int row = 1; row < dimension; row++) {
+            for (int col = 1; col < dimension; col++) {
+                int rangeStart = (row <= n)? row: dimension - row;
+                int rangeEnd = (row <= n)?(dimension - row): row;
+                System.out.print(rangeStart < col && col < rangeEnd?" ":"*");
+            }
+            System.out.println();
+        }
+    }
+    public static void pattern20(int n){
+        for (int row = 1; row <= n; row++) {
+            for (int col = 1; col <= n; col++) {
+                System.out.print((1 < row && row < n) && (1 < col && col < n)?" ":"*");
+            }
+            System.out.println();
+        }
+    }
+    public static void pattern21(int n){
+        int i = 0;
+        for (int row = 1; row <= n; row++) {
+            for (int col = 1; col <= row; col++) {
+                System.out.printf("%-2d ",++i);
+            }
+            System.out.println();
+        }
+    }
+    public static void pattern22(int n){
+        //way one
+//        for (int row = 1; row <= n; row++) {
+//            boolean flag = row % 2 == 0;
+//            for (int col = 1; col <= row; col++) {
+//                System.out.printf(flag? "0 ": "1 ");
+//                flag = !flag;
+//            }
+//            System.out.println();
+//        }
+        //way two
+        for (int row = 1; row <= n; row++) {
+            for (int col = 1; col <= row; col++) {
+                boolean flag = col % 2 == 0;
+                System.out.printf(flag? "0 ": "1 ");
+            }
+            System.out.println();
+        }
+    }
+    public static void pattern23(int n){
+        for (int row = 1; row <= n; row++) {
+            for (int col = 1; col <= n - row; col++) {
+                System.out.print("  ");
+            }
+            for (int col = 1; col <= n; col++) {
+                System.out.print((col == 1 || col == n|| col == row)? "*  ":"   ");
+            }
+            for (int col = 2; col <= n; col++) {
+                System.out.print((col == row)? "*  ":"   ");
+            }
+            System.out.println();
 
-    ///////////////////////////
+        }
+    }
+    public static void pattern24(int n){
+        int dimension = n + n;
+        for (int row = 1; row <= dimension; row++) {
+            for (int col = 1; col <= dimension; col++) {
+                boolean flag = row == col || col == (dimension + 1 - row) || col == 1 || col == dimension;
+                System.out.print(flag?"*":" ");
+            }
+            System.out.println();
+        }
+    }
+    public static void pattern25(int n){
+        for (int row = 1; row <= n; row++) {
+            for (int col = 1; col <= n - row; col++) {
+                System.out.print(" ");
+            }
+            for (int col = 1; col <= n; col++) {
+                System.out.print((1 < row && row < n) && (1 < col && col < n)?" ":"*");
+            }
+            System.out.println();
+        }
+    }
+    public static void pattern26(int n){
+        for (int row = 1; row <= n; row++) {
+            for (int col = 1; col <= n - row + 1; col++) System.out.printf("%d",row);
+            System.out.println();
+        }
+    }
+    public static void pattern27(int n){
+        int i = 0;
+        int min = (n*(n+1)) + 1;
+        for (int row = 1; row <= n; row++) {
+            for (int col = 1; col < row; col++) {
+                System.out.print("   ");
+            }
+            for (int col = 1; col <= n + 1 - row; col++) {
+                System.out.printf("%-2d ",++i);
+            }
+            min -= n - row + 1 ;
+            for (int col = 0; col <= n - row; col++) {
+                System.out.printf("%2d ",min + col);
+            }
+            System.out.println();
+        }
+    }
+    public static void pattern28(int n){
+        int height = n + n;
+        for (int row = 1; row < height; row++) {
+            int      width = (row <= n)? row: height - row;
+            for (int col = 0; col < n - width; col++) {
+                System.out.print(" ");
+            }
+            for (int col = 0; col < width; col++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+    public static void pattern29(int n){
+        int height = n + n;
+        for (int row = 1; row < height; row++) {
+            int rangeStart = (row < n)? row: height - row;
+            int rangeEnd = (row <= n)? height - row: row;
+            for (int col = 1; col < height; col++) {
+                boolean flag = rangeStart < col && col < rangeEnd;
+                System.out.print(flag?"  ":"* ");
+            }
+            System.out.println();
+        }
+    }
+    public static void pattern30(int n){
+        for (int row = 1; row <= n; row++) {
+            for (int col = 0; col < n - row; col++) {
+                System.out.print("  ");
+            }
+            int width = row + row - 1;
+            for (int col = 1; col <= width; col++) {
+                int symbol = (col <= row) ? row + 1 - col: col - row + 1;
+                System.out.print(symbol + " ");
+            }
 
+            System.out.println();
+        }
+    }
+    public static void pattern31(int n){
+        n = n * 2;
+        for (int i = 1; i < n; i++){
+            for (int j = 1; j < n;j++){
+                int x = (n/2) - Math.min(Math.min(i,j),Math.min(n-i,n-j)) + 1;
+                System.out.print(x + " ");
+            }
+            System.out.println();
+        }
+    }
+    public static void pattern32(int n){
+        for (int row = 1; row <= n; row++) {
+            char symbol = (char)('A' + (n - row) - 1);
+            for (int col = 1; col <= row; col++) {
+                System.out.print((char)(symbol + col));
+            }
+            System.out.println();
+        }
+    }
+    public static void pattern33(int n){
+        char symbol = 'a';
+        for (int row = 1; row <= n; row++) {
+            for (int col = 1; col <= row; col++) {
+                System.out.print(symbol++ + " ");
+                symbol = (Character.isUpperCase(symbol))? Character.toLowerCase(symbol): Character.toUpperCase(symbol);
+            }
+            System.out.println();
+        }
+    }
+    public static void pattern34(int n){
+        for (int row = 1; row <= n; row++) {
+            char symbol = (char)('A' + (n - row));
+            for (int col = 0; col <= n - row; col++) {
+                System.out.print((char)(symbol - col));
+            }
+            System.out.println();
+        }
+    }
+    public static void pattern35(int n){
+        for (int row = 1; row <= n; row++) {
+            int width = n * 2;
+            int rangeStart = row;
+            int rangeEnd = width + 1 - row;
+            for (int col = 1; col <= width; col++) {
+                int symbol = (col <= n) ? col: width + 1 - col;
+                System.out.print((rangeStart<col) && (col<rangeEnd) ? " ": symbol);
+            }
+            System.out.println();
+        }
+    }
 }
