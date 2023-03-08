@@ -1,39 +1,62 @@
-# DSA
+# JiteshBhashwani/DSA
 
-This repository showcases my solutions to various data structures and algorithms problems from different sources. It also includes some of the data structures that I have implemented from scratch.
+This is a repository to track the progress of my data structures and algorithms (DSA) learning journey. I am following various online courses, books and websites to learn and practice DSA concepts and problems.
 
 ## Table of Contents
 
-- [DSA](#dsa)
-    - [Table of Contents](#table-of-contents)
-    - [Motivation](#motivation)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Contributing](#contributing)
-    - [License](#license)
+- [Table of Contents](#table-of-contents)
+- [Motivation](#motivation)
+- [Resources](#resources)
+- [Acknowledgements](#acknowledgements)
+- [How to use](#how-to-use)
+- [License](#license)
+- [Contact](#contact)
 
 ## Motivation
 
-I created this repository to practice and improve my problem-solving skills using data structures and algorithms. I also wanted to share my solutions with other learners who might find them helpful or interesting.
+I created this repository to document my learning process and to showcase my skills and knowledge in DSA. I believe that DSA is an essential topic for any software engineer or programmer who wants to solve complex problems efficiently and elegantly. I also enjoy learning new things and challenging myself with different types of problems.
 
-## Installation
+## Resources
 
-To run the code in this repository, you will need a C++ compiler and an IDE of your choice. You can also use an online compiler like https://www.onlinegdb.com/online_c++_compiler.
+The resources that I am using or have used for learning DSA are:
 
-## Usage
+- [Data Structures and Algorithms Made Easy](https://www.amazon.in/Data-Structures-Algorithms-Made-Easy/dp/819324527X) by Narasimha Karumanchi
+- [Introduction to Algorithms](https://www.amazon.in/Introduction-Algorithms-Eastern-Economy-Thomas/dp/8120340078) by Thomas H. Cormen et al.
+- [GeeksforGeeks](https://www.geeksforgeeks.org/) website
+- [Data Structures and Algorithms Through C In Depth](https://www.udemy.com/course/datastructurescncpp/) by Abdul Bari
+- [Beginning C++ Programming - From Beginner to Beyond](https://www.udemy.com/course/beginning-c-plus-plus-programming/learn/lecture/9535626?start=0#overview) by Tim Buchalka's Learn Programming Academy, Dr. Frank Mitropoulos.
+- YouTube channels:
+  - [Love Babbar DSA Playlist](https://www.youtube.com/watch?v=4iFALQ1ACdA&list=PLUcsbZa0qzu3yNzzAxgvSgRobdUUJvz7p)
+  - [Striver](https://www.youtube.com/channel/UCJskGeByzRRSvmOyZOz61ig)
+  - [CodeWithHarry](https://www.youtube.com/channel/UCeVMnSShP_Iviwkknt83cww)
+  - [Kunal Kushwaha](https://www.youtube.com/channel/UCF7BExjT2zH_mmyqOB139Dg)
+  - [Aditya Verma](https://www.youtube.com/channel/UC5WO7o71wvxMxEtLRkPhiQQ)
+  - [Fireship](https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA)
 
-Each folder in this repository corresponds to a source of problems, such as LeetCode or HackerRank. Inside each folder, you will find subfolders for different topics or categories, such as arrays or strings. Each subfolder contains one or more C++ files with the problem statement and my solution.
+## Acknowledgements
 
-You can run any file by compiling it with your C++ compiler and executing it. For example:
+I would like to thank chatGPT for helping me solve some of my coding doubts. ChatGPT is an open source machine learning framework to automate text- and voice-based conversations. You can find more information about chatGPT [here](https://github.com/topics/chatbot).
+
+The repository contains the following directories:
+
+- `datastructures`: This directory contains implementations of various data structures such as arrays, linked lists, stacks, queues, trees, graphs, etc. in C++.
+- `algorithms`: This directory contains implementations of various algorithms such as sorting, searching, dynamic programming, greedy, backtracking, etc. in C++.
+- `problems`: This directory contains solutions to various DSA problems from different platforms such as LeetCode, HackerRank, CodeChef, etc. in C++.
+
+**Note: This repository is still in progress and I am currently adding more content as I am learning. Some content may be in Java instead of C++.**
+
+## How to use
+
+To use this repository, you need to have a C++ compiler installed on your system. You can use any IDE or text editor of your choice. To compile and run a C++ file from the command line, you can use the following commands:
 
 ```bash
-g++ arrays/maximum_subarray.cpp -o maximum_subarray
-./maximum_subarray 
+g++ filename.cpp -o filename ./filename
 ```
-Alternatively, you can copy and paste the code into an online compiler and run it there.
 
-Contributing
-This project is open for contributions. If you have any suggestions, feedback or improvements, feel free to create an issue or a pull request. You can also contact me at jiteshbhashwani@gmail.com.
+## License
 
-License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+This repository is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+If you have any questions or suggestions regarding this repository, feel free to contact me at jiteshbhashwani@gmail.com or open an issue on GitHub.
