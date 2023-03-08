@@ -29,7 +29,7 @@ The resources that I am using or have used for learning DSA are:
   - [Love Babbar DSA Playlist](https://www.youtube.com/watch?v=4iFALQ1ACdA&list=PLUcsbZa0qzu3yNzzAxgvSgRobdUUJvz7p)
   - [Striver](https://www.youtube.com/channel/UCJskGeByzRRSvmOyZOz61ig)
   - [CodeWithHarry](https://www.youtube.com/channel/UCeVMnSShP_Iviwkknt83cww)
-  - [Kunal Kushwaha](https://www.youtube.com/channel/UCF7BExjT2zH_mmyqOB139Dg)
+  - [Kunal Kushwaha](https://www.youtube.com/@KunalKushwaha)
   - [Aditya Verma](https://www.youtube.com/channel/UC5WO7o71wvxMxEtLRkPhiQQ)
   - [Fireship](https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA)
 
