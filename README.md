@@ -35,7 +35,7 @@ The resources that I am using or have used for learning DSA are:
 
 ## Acknowledgements
 
-I would like to thank chatGPT for helping me solve some of my coding doubts. ChatGPT is an open source machine learning framework to automate text- and voice-based conversations. You can find more information about chatGPT [here](https://github.com/topics/chatbot).
+I would like to thank chatGPT for helping me solve some of my coding doubts. ChatGPT is an open source machine learning framework to automate text- and voice-based conversations. You can find more information about chatGPT [here](http://chat.openai.com/).
 
 The repository contains the following directories:
 
