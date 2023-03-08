@@ -12,6 +12,15 @@ This is a repository to track the progress of my data structures and algorithms 
 - [License](#license)
 - [Contact](#contact)
 
+The repository contains the following directories:
+
+- `datastructures`: This directory contains implementations of various data structures such as arrays, linked lists, stacks, queues, trees, graphs, etc. in C++.
+- `algorithms`: This directory contains implementations of various algorithms such as sorting, searching, dynamic programming, greedy, backtracking, etc. in C++.
+- `problems`: This directory contains solutions to various DSA problems from different platforms such as LeetCode, HackerRank, CodeChef, etc. in C++.
+
+**Note: This repository is still in progress and I am currently adding more content as I am learning. Some content may be in Java instead of C++.**
+
+
 ## Motivation
 
 I created this repository to document my learning process and to showcase my skills and knowledge in DSA. I believe that DSA is an essential topic for any software engineer or programmer who wants to solve complex problems efficiently and elegantly. I also enjoy learning new things and challenging myself with different types of problems.
@@ -36,14 +45,6 @@ The resources that I am using or have used for learning DSA are:
 ## Acknowledgements
 
 I would like to thank chatGPT for helping me solve some of my coding doubts. ChatGPT is an open source machine learning framework to automate text- and voice-based conversations. You can find more information about chatGPT [here](http://chat.openai.com/).
-
-The repository contains the following directories:
-
-- `datastructures`: This directory contains implementations of various data structures such as arrays, linked lists, stacks, queues, trees, graphs, etc. in C++.
-- `algorithms`: This directory contains implementations of various algorithms such as sorting, searching, dynamic programming, greedy, backtracking, etc. in C++.
-- `problems`: This directory contains solutions to various DSA problems from different platforms such as LeetCode, HackerRank, CodeChef, etc. in C++.
-
-**Note: This repository is still in progress and I am currently adding more content as I am learning. Some content may be in Java instead of C++.**
 
 ## How to use
 
