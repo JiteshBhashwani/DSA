@@ -1,25 +1,28 @@
-import java.util.Arrays;
-
 class Solution {
     public void setZeroes(int[][] matrix) {
-        int row = matrix.length;
-        int col = matrix[0].length;
-        int[] dummyRow = new int[row];
-        int[] dummyCol = new int[col];
-        Arrays.fill(dummyRow, -1);
-        Arrays.fill(dummyCol, -1);
-        for(int i=0;i<row;i++){
-            for(int j=0;j<col;j++){
-                if(matrix[i][j]==0){
-                    dummyRow[i] = 0;
-                    dummyCol[j] = 0;
+        int height = matrix.length;
+        int width = matrix[0].length;
+        boolean[] rows = new boolean[height];
+        boolean[] cols = new boolean[width];
+
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < width; j++) {
+                if(matrix[i][j] == 0){
+                    rows[i] = cols[j] = true;
                 }
             }
         }
-        for(int i=0;i<row;i++){
-            for(int j=0;j<col;j++){
-                if(dummyRow[i] == 0 || dummyCol[j] == 0 ){
-                    matrix[i][j]=0;
+        for (int i = 0; i < height; i++) {
+            if(rows[i]) {
+                for (int j = 0; j < width; j++) {
+                    matrix[i][j] = 0;
+                }
+            }
+        }
+        for (int i = 0; i < width; i++) {
+            if(cols[i]) {
+                for (int j = 0; j < height; j++) {
+                    matrix[j][i] = 0;
                 }
             }
         }
