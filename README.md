@@ -7,7 +7,6 @@ This is a repository to track the progress of my data structures and algorithms 
 - [Table of Contents](#table-of-contents)
 - [Motivation](#motivation)
 - [Resources](#resources)
-- [Acknowledgements](#acknowledgements)
 - [How to use](#how-to-use)
 - [License](#license)
 - [Contact](#contact)
@@ -41,10 +40,6 @@ The resources that I am using or have used for learning DSA are:
   - [Kunal Kushwaha](https://www.youtube.com/@KunalKushwaha)
   - [Aditya Verma](https://www.youtube.com/channel/UC5WO7o71wvxMxEtLRkPhiQQ)
   - [Fireship](https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA)
-
-## Acknowledgements
-
-I would like to thank chatGPT for helping me solve some of my coding doubts. ChatGPT is a machine learning framework to automate text- and voice-based conversations. You can find more information about chatGPT [here](http://chat.openai.com/).
 
 ## How to use
 
